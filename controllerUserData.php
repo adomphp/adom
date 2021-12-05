@@ -75,7 +75,7 @@ if(isset($_POST['signup'])){
                 $_SESSION['name'] = $nom;
                 $_SESSION['email'] = $email;
                 $_SESSION['userType'] = $userType;
-                header('location: ../acceuil-user.php');
+                header('location: ../home.php');
                 exit();
             }else{
                 $errors['otp-error'] = "erreur lors de uploading le code!";
@@ -102,7 +102,7 @@ if(isset($_POST['signup'])){
                   $_SESSION['email'] = $email;
                   $_SESSION['userType'] = $userType;
                   $_SESSION['password'] = $password;
-                    header('location: ../acceuil-user.php');
+                    header('location: ../home.php');
                 }else{
                     $info = "Vous n'ayez pas encore vérifié votre adresse e-mail  - $email";
                     $_SESSION['info'] = $info;
